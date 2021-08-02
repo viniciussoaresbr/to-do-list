@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--light);
+}
+
+.header__logo {
+  color: var(--primary);
+  font: 2rem var(--title);
+}
