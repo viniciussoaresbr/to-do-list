@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Form from "./components/form/Form";
 import Header from "./components/header/Header";
@@ -7,7 +7,6 @@ import NoteList from "./components/notelist/NoteList";
 function App() {
   const [showForm, setShowForm] = useState(false);
   const [notes, setNotes] = useState([]);
-  const fnToggleDone = (index) => {};
 
   return (
     <div className="App">
@@ -23,7 +22,14 @@ function App() {
           }}
         />
       ) : null}
-      <NoteList notes={notes} fnToggleDone={fnToggleDone} />
+      <NoteList
+        notes={notes}
+        fnToggleDone={(index, checked) => {
+          const attNotes = notes;
+          attNotes[index].done = checked;
+          setNotes(attNotes);
+        }}
+      />
     </div>
   );
 }

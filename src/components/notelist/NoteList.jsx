@@ -1,3 +1,4 @@
+import Note from "../note/Note";
 const NoteList = ({ notes, fnToggleDone }) => {
   return (
     <div>
