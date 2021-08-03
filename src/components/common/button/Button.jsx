@@ -1,16 +1,17 @@
 import "./Button.css";
 
-const Button = ({ evClick, text }) => {
-  return (
-    <button
-      className="button"
-      onClick={() => {
-        evClick();
-      }}
-    >
-      {text}
-    </button>
-  );
+const Button = ({ evClick = () => {}, text, type = "button" }) => {
+    return (
+        <button
+            className="button"
+            onClick={(event) => {
+                evClick(event);
+            }}
+            type={type}
+        >
+            {text}
+        </button>
+    );
 };
 
 export default Button;
