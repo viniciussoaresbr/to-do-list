@@ -1,16 +1,25 @@
+import { useState } from "react";
 import "./App.css";
 import Form from "./components/form/Form";
 import Header from "./components/header/Header";
 
 function App() {
-    const showText = ({ text }) => {
-        console.log(text);
-    };
+    const [showForm, setShowForm] = useState(false);
 
     return (
         <div className="App">
-            <Header />
-            <Form evSubmit={showText} />
+            <Header
+                fnToggleForm={() => {
+                    setShowForm(!showForm);
+                }}
+            />
+            {showForm ? (
+                <Form
+                    evSubmit={({ text }) => {
+                        console.log(text);
+                    }}
+                />
+            ) : null}
         </div>
     );
 }
