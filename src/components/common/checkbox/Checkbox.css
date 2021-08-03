@@ -1,0 +1,17 @@
+.checkbox {
+    height: 30px;
+    width: 30px;
+    background-color: var(--gray);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox--checked {
+    height: 15px;
+    width: 30px;
+    border-left: 6px solid var(--accept);
+    border-bottom: 6px solid var(--accept);
+    transform: rotate(-45deg);
+}
