@@ -2,9 +2,11 @@
 
 ## Core
 
--   Implementar o componente NoteList.jsx que será responsavel por mostrar as notas criadas
+-   Implementar o componente NoteList.jsx que será responsável por mostrar as notas criadas
 
--   Implementar o componente Note.jsx que deverá mostrará o texto e possuir uma checkbox para poder marcar a tarefa como concluida
+-   Implementar o componente Note.jsx que deverá mostrar o texto e possuir uma checkbox para poder marcar a tarefa como concluída
+
+-   Implementar o componente Footer.jsx que deverá conter informações sobre os desenvolvedores da aplicação
 
 ## Features
 
@@ -13,4 +15,4 @@
     -   Buscar por parte do texto
     -   Buscar por tarefas finalizadas ou não finalizadas
 
--   Implementar o componente Statistics.jsx que será responsavel por motrar as estatísticas das tarefas concluidas e não concluidas
+-   Implementar o componente Statistics.jsx que será responsável por motrar as estatísticas das tarefas concluídas e não concluídas
