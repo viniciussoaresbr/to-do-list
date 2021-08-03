@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Form from "./components/form/Form";
 import Header from "./components/header/Header";
+import Note from "./components/note/Note";
 
 function App() {
     const [showForm, setShowForm] = useState(false);

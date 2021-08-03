@@ -1,0 +1,11 @@
+.note {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    border-bottom: 2px solid var(--gray);
+}
+
+.note__text {
+    font: 1.4rem var(--text);
+    color: var(--dark);
+}
