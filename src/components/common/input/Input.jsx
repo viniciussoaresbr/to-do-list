@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 const Input = ({ label = "", value = "", evChange = () => {} }) => {
     return (
         <div className="input">

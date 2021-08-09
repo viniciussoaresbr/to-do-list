@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./Checkbox.css";
 
 const Checkbox = ({ evClick = () => {}, checked = false }) => {
