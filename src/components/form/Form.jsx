@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "../common/button/Button";
+import Input from "../common/input/Input";
 import "./Form.css";
 
 const Form = ({ evSubmit = () => {} }) => {
@@ -11,21 +12,16 @@ const Form = ({ evSubmit = () => {} }) => {
             onSubmit={(event) => {
                 event.preventDefault();
                 evSubmit({ text });
+                setText("");
             }}
         >
-            <div className="input">
-                <label className="input__label">
-                    O que eu tenho pra fazer?
-                </label>
-                <input
-                    className="input__field"
-                    type="text"
-                    value={text}
-                    onChange={(event) => {
-                        setText(event.target.value);
-                    }}
-                />
-            </div>
+            <Input
+                label="O que eu tenho pra fazer?"
+                value={text}
+                evChange={({ value }) => {
+                    setText(value);
+                }}
+            />
             <Button text="Criar lembrete" type="submit" />
         </form>
     );
