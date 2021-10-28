@@ -1,29 +1,16 @@
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding);
+  animation: fadeIn 0.8s;
 }
 
-.input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: var(--padding);
-    margin: var(--margin) 0;
-}
-
-.input__label {
-    font: 1.2rem var(--text);
-}
-
-.input__field {
-    border: none;
-    border-bottom: 2px solid var(--primary);
-    font: 1.2rem var(--text);
-    padding: 0 var(--padding);
-}
-
-.input__field:focus {
-    outline: none;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
