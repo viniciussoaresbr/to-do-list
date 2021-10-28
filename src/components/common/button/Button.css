@@ -5,4 +5,5 @@
   color: var(--light);
   border-radius: var(--radius);
   font: 1.2rem var(--title);
+  cursor: pointer;
 }
