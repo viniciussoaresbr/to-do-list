@@ -1,0 +1,4 @@
+.form__label {
+  font: 1.2rem var(--text);
+  margin: var(--margin);
+}
