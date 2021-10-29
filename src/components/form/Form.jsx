@@ -19,6 +19,7 @@ const Form = () => {
       }}
     >
       <Input
+        validate={true}
         label="O que eu tenho pra fazer?"
         value={text}
         evChange={({ value }) => {
