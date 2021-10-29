@@ -2,45 +2,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
 :root {
-    /* Fonts */
-    --text: "Nunito", sans-serif;
-    --title: "Itim", cursive;
+  /* Fonts */
+  --text: "Nunito", sans-serif;
+  --title: "Itim", cursive;
 
-    /* Colors */
-    --light: #ffffff;
-    --gray: #dfdfdf;
-    --dark: #292f36;
-    --primary: #ff4747;
-    --accept: #08c485;
-    --alert: #d0253c;
+  /* Colors */
+  --light: #ffffff;
+  --gray: #dfdfdf;
+  --dark: #292f36;
+  --primary: #ff4747;
+  --accept: #08c485;
+  --alert: #d0253c;
+  --blue: #1e96fc;
 
-    /* Spacing */
-    --margin: 0.6rem;
-    --padding: 0.4rem;
+  /* Spacing */
+  --margin: 0.6rem;
+  --padding: 0.4rem;
 
-    /* Border Radius */
-    --radius: 0.2rem;
+  /* Border Radius */
+  --radius: 0.2rem;
 
-    /* Box Shadow */
-    --shadow: 1px 1px 6px 1px #292f36;
+  /* Box Shadow */
+  --shadow: 1px 1px 6px 1px #292f36;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
