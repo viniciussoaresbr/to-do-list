@@ -1,11 +1,14 @@
 .note {
-    display: flex;
-    justify-content: space-between;
-    padding: var(--padding);
-    border-bottom: 2px solid var(--gray);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  border-bottom: 2px dashed var(--gray);
+  border-left: 2px solid var(--gray);
+  border-right: 2px solid var(--gray);
+  width: 80%;
 }
 
 .note__text {
-    font: 1.4rem var(--text);
-    color: var(--dark);
+  font: 1.4rem var(--text);
+  color: var(--dark);
 }
