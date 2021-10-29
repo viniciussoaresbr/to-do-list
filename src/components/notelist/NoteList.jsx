@@ -1,11 +1,13 @@
 import { useContext } from "react/cjs/react.development";
 import { NotesContext } from "../../contexts/NotesContext";
 import Note from "../note/Note";
+import "./NoteList.css";
+
 const NoteList = () => {
   const { searchStr, notes, done, undone } = useContext(NotesContext);
 
   return (
-    <div>
+    <div className="noteList">
       {notes
         .filter(nota => {
           if (done && undone) {
