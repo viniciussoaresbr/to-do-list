@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Form from "./components/form/Form";
 import Header from "./components/header/Header";
+import Main from "./components/main/Main";
 import NoteList from "./components/notelist/NoteList";
 import NotesContextProvider from "./contexts/NotesContext";
 
@@ -16,7 +16,7 @@ function App() {
         }}
       />
       <NotesContextProvider>
-        {showForm ? <Form /> : null}
+        {showForm ? <Main /> : null}
         <NoteList />
       </NotesContextProvider>
     </div>
