@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useContext } from "react/cjs/react.development";
+import { useContext, useState } from "react";
 import { NotesContext } from "../../contexts/NotesContext";
 import Checkbox from "../common/checkbox/Checkbox";
 
