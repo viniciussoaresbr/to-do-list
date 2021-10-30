@@ -1,4 +1,4 @@
-import { useContext } from "react/cjs/react.development";
+import { useContext } from "react";
 import { NotesContext } from "../../contexts/NotesContext";
 import Note from "../note/Note";
 import "./NoteList.css";
