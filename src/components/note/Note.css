@@ -8,6 +8,22 @@
   width: 80%;
 }
 
+.note__container {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.note__advice {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font: 1rem var(--text);
+  color: var(--alert);
+}
+
 .note__text {
   font: 1.4rem var(--text);
   color: var(--dark);
