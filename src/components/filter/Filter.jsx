@@ -1,7 +1,7 @@
 import "./Filter.css";
 import Checkbox from "../common/checkbox/Checkbox";
 import Input from "../common/input/Input";
-import { useContext } from "react/cjs/react.development";
+import { useContext } from "react";
 import { NotesContext } from "../../contexts/NotesContext";
 
 const Filter = () => {
