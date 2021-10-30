@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { v4 as idGenerator } from "uuid";
 
 export const NotesContext = createContext({});
 
@@ -9,16 +10,24 @@ const NotesContextProvider = ({ children }) => {
   const [searchStr, setSearchStr] = useState("");
 
   const createNote = ({ text }) => {
-    setNotes([...notes, { text, done: false, id: notes.length }]);
+    setNotes([...notes, { text, done: false, id: idGenerator() }]);
   };
 
   const fnToggleDone = (id, checked) => {
     setNotes(
-      notes.map((value, i) => {
-        if (i === id) {
-          value.done = checked;
+      notes.map(note => {
+        if (note.id === id) {
+          note.done = checked;
         }
-        return value;
+        return note;
+      })
+    );
+  };
+
+  const removeNote = id => {
+    setNotes(
+      notes.filter(note => {
+        return note.id !== id;
       })
     );
   };
@@ -35,6 +44,7 @@ const NotesContextProvider = ({ children }) => {
         searchStr,
         setSearchStr,
         notes,
+        removeNote,
       }}
     >
       {children}
