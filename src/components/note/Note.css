@@ -14,6 +14,7 @@
   align-items: center;
   position: relative;
   cursor: pointer;
+  overflow-x: hidden;
 }
 
 .note__advice {
@@ -27,4 +28,10 @@
 .note__text {
   font: 1.4rem var(--text);
   color: var(--dark);
+}
+
+@media (max-width: 1279px) {
+  .note__advice {
+    display: none;
+  }
 }

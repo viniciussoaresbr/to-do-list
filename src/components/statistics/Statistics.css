@@ -53,3 +53,55 @@
     opacity: 1;
   }
 }
+
+@media (min-width: 580px) and (max-width: 767px) {
+  .statistics {
+    width: 35rem;
+    padding: 0;
+  }
+
+  .statistics__title {
+    display: none;
+  }
+
+  .statistics__container {
+    width: 11rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 579px) {
+  .statistics {
+    width: 28rem;
+    padding: 0;
+  }
+
+  .statistics__title {
+    display: none;
+  }
+
+  .statistics__container {
+    width: 9.3rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .statistics {
+    width: 17rem;
+    padding: 0;
+    height: 16rem;
+  }
+
+  .statistics__title {
+    font: 1rem var(--text);
+    margin: 0 0.2rem;
+  }
+
+  .statistics__info {
+    display: none;
+  }
+
+  .statistics__container {
+    width: 9.3rem;
+    height: 14rem;
+  }
+}
