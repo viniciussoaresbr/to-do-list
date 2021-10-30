@@ -11,7 +11,7 @@ const Input = ({
         {label}
       </label>
       <input
-        maxLength="50"
+        maxLength="40"
         required={validate}
         value={value}
         type="text"
