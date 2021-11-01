@@ -6,5 +6,5 @@
 <li>Você pode buscar pelo lembrete que deseja</li>
 <li>Você pode filtrar seus lembretes pelos que foram finalizados ou não finalizados </li>
 <li>Com dois cliques você pode remover o lembrete que deseja</li>
-
+<br>
 <p>&#10149 <a href="https://viniciussoaresbr.github.io/to-do-list/">Acesse a Página do Projeto</a></p>
